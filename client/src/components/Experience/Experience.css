@@ -1,0 +1,303 @@
+/* ==========================================================================
+   Experience Section Styles
+   ========================================================================== */
+
+.experience-section {
+  position: relative;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  position: relative;
+}
+
+/* Marker & Line */
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.dot-ongoing {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.dot-completed {
+  border-color: #06b6d4;
+  color: #38bdf8;
+  background: rgba(6, 182, 212, 0.1);
+}
+
+.timeline-connector {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--border-glass-hover), rgba(255, 255, 255, 0.05));
+  margin: 8px 0;
+}
+
+/* Card */
+.experience-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 18px;
+}
+
+.card-ongoing {
+  border-color: rgba(16, 185, 129, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.1);
+}
+
+.exp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.exp-role-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exp-tech-icon {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.exp-role-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.exp-company-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: var(--primary-light);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.exp-status-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.exp-duration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.meta-icon {
+  font-size: 0.85rem;
+}
+
+/* Body & Responsibilities */
+.exp-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-resp-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.exp-resp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.exp-resp-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.resp-check-icon {
+  color: var(--accent-emerald);
+  font-size: 0.9rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* Internship Certificate Preview */
+.internship-cert-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.internship-cert-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-cyan);
+}
+
+.internship-cert-preview-frame {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(7, 11, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.internship-cert-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+  transition: transform var(--transition-normal);
+}
+
+.internship-cert-preview-frame:hover .internship-cert-preview-img {
+  transform: scale(1.02);
+}
+
+.internship-cert-preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 11, 20, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.internship-cert-preview-frame:hover .internship-cert-preview-overlay {
+  opacity: 1;
+}
+
+.internship-cert-overlay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--primary-gradient);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  transform: translateY(6px);
+  transition: transform var(--transition-fast);
+}
+
+.internship-cert-preview-frame:hover .internship-cert-overlay-btn {
+  transform: translateY(0);
+}
+
+/* Footer */
+.exp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.exp-tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-marker {
+    display: none;
+  }
+
+  .exp-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-status-wrap {
+    align-items: flex-start;
+  }
+
+  .exp-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
