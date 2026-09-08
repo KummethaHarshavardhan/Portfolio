@@ -17,9 +17,7 @@ import {
 } from 'react-icons/fa';
 import './Contact.css';
 
-const GITHUB_URL = "https://github.com/KummethaHarshavardhan";
-const LINKEDIN_URL = "https://www.linkedin.com/in/harshavardhan-kummetha-69089228a/";
-const EMAIL = "harshakummetha78@gmail.com";
+import { RESUME_URL, GITHUB_URL, LINKEDIN_URL, EMAIL } from '../../constants';
 const PHONE = "+91 6281240878";
 // WhatsApp deep-link needs the number with country code, no spaces/plus sign.
 const WHATSAPP_NUMBER = PHONE.replace(/[^\d]/g, '');
@@ -306,10 +304,12 @@ const Contact = () => {
             </a>
 
             <a
-              href="/resume/Kummetha-Harshavardhan-Resume.pdf"
-              download="Kummetha-Harshavardhan-Resume.pdf"
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary"
               aria-label="Download Resume"
+              id="contact-resume-btn"
             >
               <FaFileDownload />
               <span>Download Resume</span>

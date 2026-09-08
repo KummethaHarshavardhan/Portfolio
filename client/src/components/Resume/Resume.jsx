@@ -11,6 +11,7 @@ import {
   FaShieldAlt,
   FaFileAlt
 } from 'react-icons/fa';
+import { RESUME_URL } from '../../constants';
 import './Resume.css';
 
 const Resume = () => {
@@ -45,11 +46,11 @@ const Resume = () => {
               <div className="resume-badge-group">
                 <span className="pdf-type-badge">
                   <FaFilePdf style={{ color: '#ef4444' }} />
-                  <span>PDF Document (Verified)</span>
+                  <span>Resume (Google Drive)</span>
                 </span>
                 <span className="updated-badge">
                   <FaShieldAlt style={{ color: '#10b981' }} />
-                  <span>Updated 2026</span>
+                  <span>Verified Link</span>
                 </span>
               </div>
 
@@ -82,11 +83,12 @@ const Resume = () => {
               <div className="resume-action-buttons">
                 {/* 1. View Resume Button */}
                 <a
-                  href="/resume/Kummetha-Harshavardhan-Resume.pdf"
+                  href={RESUME_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-secondary resume-btn"
                   id="resume-view-action-btn"
+                  aria-label="View Resume on Google Drive"
                 >
                   <FaExternalLinkAlt />
                   <span>View Resume</span>
@@ -94,10 +96,12 @@ const Resume = () => {
 
                 {/* 2. Download Resume Button */}
                 <a
-                  href="/resume/Kummetha-Harshavardhan-Resume.pdf"
-                  download
+                  href={RESUME_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary resume-btn"
                   id="resume-download-action-btn"
+                  aria-label="Download or View Resume on Google Drive"
                 >
                   <FaDownload />
                   <span>Download Resume</span>
@@ -107,43 +111,52 @@ const Resume = () => {
 
             {/* Right: Interactive Resume Preview Card */}
             <div className="resume-preview-panel">
-              <div className="resume-paper-preview">
-                <div className="paper-header">
-                  <div className="paper-name">K HARSHAVARDHAN</div>
-                  <div className="paper-contact">harshakummetha78@gmail.com &bull; +91 6281240878</div>
-                  <div className="paper-location">Tadipatri / Cheemalavagupalli, Andhra Pradesh, India</div>
-                </div>
-
-                <div className="paper-section">
-                  <div className="paper-sec-title">CAREER OBJECTIVE</div>
-                  <p className="paper-text">
-                    Motivated and enthusiastic Software Engineer with hands-on experience in Python, JavaScript, React.js, Node.js, Express.js, MongoDB, and REST API development. Strong foundation in Object-Oriented Programming and software development principles...
-                  </p>
-                </div>
-
-                <div className="paper-section">
-                  <div className="paper-sec-title">EDUCATION</div>
-                  <div className="paper-row">
-                    <span><strong>B.Tech</strong> &bull; Audisankara College of Engg & Tech</span>
-                    <span className="paper-score">84% (2022 – 2026)</span>
+              <a
+                href={RESUME_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-paper-link"
+                title="Click to view full resume on Google Drive"
+                aria-label="Open Resume on Google Drive"
+              >
+                <div className="resume-paper-preview">
+                  <div className="paper-header">
+                    <div className="paper-name">K HARSHAVARDHAN</div>
+                    <div className="paper-contact">harshakummetha78@gmail.com &bull; +91 6281240878</div>
+                    <div className="paper-location">Tadipatri / Cheemalavagupalli, Andhra Pradesh, India</div>
                   </div>
-                  <div className="paper-row">
-                    <span><strong>Intermediate</strong> &bull; Nalanda Junior College</span>
-                    <span className="paper-score">81% (2020 – 2022)</span>
+
+                  <div className="paper-section">
+                    <div className="paper-sec-title">CAREER OBJECTIVE</div>
+                    <p className="paper-text">
+                      Motivated and enthusiastic Software Engineer with hands-on experience in Python, JavaScript, React.js, Node.js, Express.js, MongoDB, and REST API development. Strong foundation in Object-Oriented Programming and software development principles...
+                    </p>
+                  </div>
+
+                  <div className="paper-section">
+                    <div className="paper-sec-title">EDUCATION</div>
+                    <div className="paper-row">
+                      <span><strong>B.Tech</strong> &bull; Audisankara College of Engg & Tech</span>
+                      <span className="paper-score">84% (2022 – 2026)</span>
+                    </div>
+                    <div className="paper-row">
+                      <span><strong>Intermediate</strong> &bull; Nalanda Junior College</span>
+                      <span className="paper-score">81% (2020 – 2022)</span>
+                    </div>
+                  </div>
+
+                  <div className="paper-section">
+                    <div className="paper-sec-title">CORE PROJECTS</div>
+                    <div className="paper-proj">
+                      <strong>Smart Expense Tracker (MERN)</strong>: Full-stack CRUD with JWT auth, 10+ REST endpoints, MongoDB Mongoose.
+                    </div>
+                  </div>
+
+                  <div className="paper-watermark">
+                    <span>VIEW RESUME</span>
                   </div>
                 </div>
-
-                <div className="paper-section">
-                  <div className="paper-sec-title">CORE PROJECTS</div>
-                  <div className="paper-proj">
-                    <strong>Smart Expense Tracker (MERN)</strong>: Full-stack CRUD with JWT auth, 10+ REST endpoints, MongoDB Mongoose.
-                  </div>
-                </div>
-
-                <div className="paper-watermark">
-                  <span>PDF PREVIEW</span>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </motion.div>

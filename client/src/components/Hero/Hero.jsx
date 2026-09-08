@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa';
 import { SiMongodb, SiJavascript } from 'react-icons/si';
 import Hero3D from './Hero3D';
+import { RESUME_URL } from '../../constants';
 import './Hero.css';
 
 const Hero = () => {
@@ -105,10 +106,12 @@ const Hero = () => {
 
             {/* 2. Download Resume */}
             <a
-              href="/resume/Kummetha-Harshavardhan-Resume.pdf"
-              download="Kummetha-Harshavardhan-Resume.pdf"
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-secondary hero-btn"
               id="hero-download-resume-btn"
+              aria-label="Download or View Resume on Google Drive"
             >
               <FaFileDownload />
               <span>Download Resume</span>

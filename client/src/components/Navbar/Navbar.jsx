@@ -21,8 +21,7 @@ const NAV_ITEMS = [
   { id: 'contact', label: 'Contact' },
 ];
 
-const GITHUB_URL = "https://github.com/KummethaHarshavardhan";
-const LINKEDIN_URL = "https://www.linkedin.com/in/harshavardhan-kummetha-69089228a/";
+import { RESUME_URL, GITHUB_URL, LINKEDIN_URL } from '../../constants';
 
 const Navbar = ({ activeSection, setActiveSection }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -128,9 +127,12 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             <FaLinkedin />
           </a>
           <a
-            href="/resume/Kummetha-Harshavardhan-Resume.pdf"
-            download="Kummetha-Harshavardhan-Resume.pdf"
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary btn-sm resume-nav-btn"
+            aria-label="View Resume on Google Drive"
+            title="View Resume on Google Drive"
           >
             <FaFileDownload />
             <span>Resume</span>
@@ -195,13 +197,15 @@ const Navbar = ({ activeSection, setActiveSection }) => {
 
               <div className="mobile-resume-action">
                 <a
-                  href="/resume/Kummetha-Harshavardhan-Resume.pdf"
-                  download="Kummetha-Harshavardhan-Resume.pdf"
+                  href={RESUME_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary"
                   style={{ width: '100%' }}
+                  aria-label="View Resume on Google Drive"
                 >
                   <FaFileDownload />
-                  <span>Download Resume PDF</span>
+                  <span>Resume (Google Drive)</span>
                 </a>
               </div>
             </div>

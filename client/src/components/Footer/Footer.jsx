@@ -9,9 +9,7 @@ import {
 } from 'react-icons/fa';
 import './Footer.css';
 
-const GITHUB_URL = "https://github.com/KummethaHarshavardhan";
-const LINKEDIN_URL = "https://www.linkedin.com/in/harshavardhan-kummetha-69089228a/";
-const EMAIL = "harshakummetha78@gmail.com";
+import { GITHUB_URL, LINKEDIN_URL, EMAIL } from '../../constants';
 
 const Footer = () => {
   const scrollToTop = () => {
