@@ -1,9 +1,9 @@
 import React from 'react';
-import { 
-  FaGithub, 
-  FaLinkedin, 
-  FaEnvelope, 
-  FaArrowUp, 
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaArrowUp,
   FaHeart,
   FaTerminal
 } from 'react-icons/fa';
@@ -28,9 +28,9 @@ const Footer = () => {
           <div className="footer-brand-side">
             <div className="footer-logo">
               <div className="footer-profile-box" title="Kummetha Harshavardhan">
-                <img 
-                  src="/profile/my-profile-photo.jpg" 
-                  alt="Kummetha Harshavardhan" 
+                <img
+                  src="/profile/my-profile-photo.jpg"
+                  alt="Kummetha Harshavardhan"
                   className="footer-profile-photo"
                 />
               </div>

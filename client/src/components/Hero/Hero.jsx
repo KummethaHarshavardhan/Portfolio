@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaArrowRight, 
-  FaFileDownload, 
-  FaEnvelope, 
-  FaMapMarkerAlt, 
+import {
+  FaArrowRight,
+  FaFileDownload,
+  FaEnvelope,
+  FaMapMarkerAlt,
   FaReact,
   FaNodeJs,
   FaPython
@@ -32,7 +32,7 @@ const Hero = () => {
     <section id="hero" className="hero-section">
       <div className="section-container hero-grid">
         {/* Left Column: Introduction & CTAs */}
-        <motion.div 
+        <motion.div
           className="hero-content"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,9 +41,9 @@ const Hero = () => {
           {/* Profile Photo Display */}
           <div className="hero-profile-container">
             <div className="hero-profile-frame" title="Kummetha Harshavardhan">
-              <img 
-                src="/profile/my-profile-photo.jpg" 
-                alt="Kummetha Harshavardhan" 
+              <img
+                src="/profile/my-profile-photo.jpg"
+                alt="Kummetha Harshavardhan"
                 className="hero-profile-img"
               />
             </div>
@@ -82,13 +82,13 @@ const Hero = () => {
 
           {/* Professional Introduction */}
           <p className="hero-description">
-            Motivated and enthusiastic software developer with hands-on experience in 
-            <strong className="text-highlight"> Python</strong>, 
-            <strong className="text-highlight"> JavaScript</strong>, 
-            <strong className="text-highlight"> React.js</strong>, 
-            <strong className="text-highlight"> Node.js</strong>, 
-            <strong className="text-highlight"> Express.js</strong>, 
-            <strong className="text-highlight"> MongoDB</strong>, and 
+            Motivated and enthusiastic software developer with hands-on experience in
+            <strong className="text-highlight"> Python</strong>,
+            <strong className="text-highlight"> JavaScript</strong>,
+            <strong className="text-highlight"> React.js</strong>,
+            <strong className="text-highlight"> Node.js</strong>,
+            <strong className="text-highlight"> Express.js</strong>,
+            <strong className="text-highlight"> MongoDB</strong>, and
             <strong className="text-highlight"> REST API development</strong>. Eager to build scalable full-stack solutions and deliver high-impact web applications.
           </p>
 
@@ -152,7 +152,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Column: Interactive 3D Canvas */}
-        <motion.div 
+        <motion.div
           className="hero-3d-column"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

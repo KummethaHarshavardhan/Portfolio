@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaUserGraduate, 
-  FaCode, 
-  FaServer, 
-  FaDatabase, 
-  FaShieldAlt, 
+import {
+  FaUserGraduate,
+  FaCode,
+  FaServer,
+  FaDatabase,
+  FaShieldAlt,
   FaBug,
   FaCheckCircle
 } from 'react-icons/fa';
@@ -64,8 +64,8 @@ const About = () => {
         </div>
 
         <div className="about-grid">
-          
-          <motion.div 
+
+          <motion.div
             className="glass-card about-bio-card"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -74,9 +74,9 @@ const About = () => {
           >
             <div className="about-bio-header">
               <div className="about-profile-frame" title="Kummetha Harshavardhan">
-                <img 
-                  src="/profile/my-profile-photo.jpg" 
-                  alt="Kummetha Harshavardhan" 
+                <img
+                  src="/profile/my-profile-photo.jpg"
+                  alt="Kummetha Harshavardhan"
                   className="about-profile-photo"
                 />
               </div>
@@ -87,7 +87,7 @@ const About = () => {
                 <span className="about-bio-sub">Full-Stack & MERN Developer &bull; B.Tech (84%)</span>
               </div>
             </div>
-            
+
             <p className="about-bio-text">
               I am a recent <strong>Bachelor of Technology</strong> graduate from <strong>Audisankara College of Engineering & Technology</strong> (graduating with <strong>84%</strong> aggregate), passionate about modern web engineering and full-stack software development.
             </p>

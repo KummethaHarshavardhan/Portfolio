@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaFilePdf, 
-  FaDownload, 
-  FaExternalLinkAlt, 
-  FaCheckCircle, 
-  FaGraduationCap, 
-  FaBriefcase, 
+import {
+  FaFilePdf,
+  FaDownload,
+  FaExternalLinkAlt,
+  FaCheckCircle,
+  FaGraduationCap,
+  FaBriefcase,
   FaCode,
   FaShieldAlt,
   FaFileAlt
@@ -33,7 +33,7 @@ const Resume = () => {
         </div>
 
         {/* Resume Action Card */}
-        <motion.div 
+        <motion.div
           className="glass-card resume-main-card"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

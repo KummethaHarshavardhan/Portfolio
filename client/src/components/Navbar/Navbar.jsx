@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  FaGithub, 
-  FaLinkedin, 
-  FaFileDownload, 
-  FaBars, 
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFileDownload,
+  FaBars,
   FaTimes
 } from 'react-icons/fa';
 import './Navbar.css';
@@ -59,16 +59,16 @@ const Navbar = ({ activeSection, setActiveSection }) => {
     <header className={`navbar-header ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
         {/* Brand Logo / Profile Photo Avatar */}
-        <a 
-          href="#hero" 
-          className="navbar-brand" 
+        <a
+          href="#hero"
+          className="navbar-brand"
           onClick={(e) => { e.preventDefault(); handleNavClick('hero'); }}
           aria-label="Kummetha Harshavardhan Home"
         >
           <div className="navbar-profile-box" title="Kummetha Harshavardhan">
-            <img 
-              src="/profile/my-profile-photo.jpg" 
-              alt="Kummetha Harshavardhan" 
+            <img
+              src="/profile/my-profile-photo.jpg"
+              alt="Kummetha Harshavardhan"
               className="navbar-profile-photo"
             />
           </div>

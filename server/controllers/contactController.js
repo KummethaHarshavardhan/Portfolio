@@ -110,7 +110,7 @@ const submitContact = async (req, res) => {
 
   } catch (error) {
     console.error('[Contact Controller Error]: Failed to process contact message:', error.message || error);
-    
+
     return res.status(500).json({
       success: false,
       message: 'Unable to submit your message. Please try again or reach out directly.'
