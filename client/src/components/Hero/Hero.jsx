@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { SiMongodb, SiJavascript } from 'react-icons/si';
 import Hero3D from './Hero3D';
-import { RESUME_URL } from '../../constants';
+import { RESUME_DOWNLOAD_URL } from '../../constants';
 import './Hero.css';
 
 const Hero = () => {
@@ -106,7 +106,7 @@ const Hero = () => {
 
             {/* 2. Download Resume */}
             <a
-              href={RESUME_URL}
+              href={RESUME_DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary hero-btn"

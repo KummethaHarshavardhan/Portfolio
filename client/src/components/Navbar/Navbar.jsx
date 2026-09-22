@@ -21,7 +21,7 @@ const NAV_ITEMS = [
   { id: 'contact', label: 'Contact' },
 ];
 
-import { RESUME_URL, GITHUB_URL, LINKEDIN_URL } from '../../constants';
+import { RESUME_VIEW_URL, GITHUB_URL, LINKEDIN_URL } from '../../constants';
 
 const Navbar = ({ activeSection, setActiveSection }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -127,7 +127,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             <FaLinkedin />
           </a>
           <a
-            href={RESUME_URL}
+            href={RESUME_VIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary btn-sm resume-nav-btn"
@@ -197,7 +197,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
 
               <div className="mobile-resume-action">
                 <a
-                  href={RESUME_URL}
+                  href={RESUME_VIEW_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"

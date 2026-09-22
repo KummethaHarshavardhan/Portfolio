@@ -17,7 +17,7 @@ import {
 } from 'react-icons/fa';
 import './Contact.css';
 
-import { RESUME_URL, GITHUB_URL, LINKEDIN_URL, EMAIL } from '../../constants';
+import { RESUME_DOWNLOAD_URL, GITHUB_URL, LINKEDIN_URL, EMAIL } from '../../constants';
 const PHONE = "+91 6281240878";
 // WhatsApp deep-link needs the number with country code, no spaces/plus sign.
 const WHATSAPP_NUMBER = PHONE.replace(/[^\d]/g, '');
@@ -304,7 +304,7 @@ const Contact = () => {
             </a>
 
             <a
-              href={RESUME_URL}
+              href={RESUME_DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"

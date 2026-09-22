@@ -11,7 +11,7 @@ import {
   FaShieldAlt,
   FaFileAlt
 } from 'react-icons/fa';
-import { RESUME_URL } from '../../constants';
+import { RESUME_VIEW_URL, RESUME_DOWNLOAD_URL } from '../../constants';
 import './Resume.css';
 
 const Resume = () => {
@@ -83,7 +83,7 @@ const Resume = () => {
               <div className="resume-action-buttons">
                 {/* 1. View Resume Button */}
                 <a
-                  href={RESUME_URL}
+                  href={RESUME_VIEW_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-secondary resume-btn"
@@ -96,7 +96,7 @@ const Resume = () => {
 
                 {/* 2. Download Resume Button */}
                 <a
-                  href={RESUME_URL}
+                  href={RESUME_DOWNLOAD_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary resume-btn"
@@ -112,7 +112,7 @@ const Resume = () => {
             {/* Right: Interactive Resume Preview Card */}
             <div className="resume-preview-panel">
               <a
-                href={RESUME_URL}
+                href={RESUME_VIEW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume-paper-link"
