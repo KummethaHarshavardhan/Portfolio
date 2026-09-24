@@ -2,12 +2,12 @@ import profilePhoto from './assets/profile.png';
 
 export const PROFILE_IMAGE = profilePhoto;
 
-const RESUME_FILE_ID = "14grdQegxGJ69cAn4ChNS73auXdueAbLp";
+const RESUME_FILE_ID = "1mvJ51EXrz5GJV3m9pNTrtzPmQ8nrGFdB";
 
-// Opens Google's clean preview viewer — no "Request access" screen.
-export const RESUME_VIEW_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/preview`;
+// Opens Google Drive resume link provided by the user
+export const RESUME_VIEW_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/view?usp=drivesdk`;
 
-// Triggers a direct file download instead of opening Drive's UI.
+// Triggers direct file download
 export const RESUME_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${RESUME_FILE_ID}`;
 
 // Alias so any component still importing RESUME_URL keeps working.
