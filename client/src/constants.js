@@ -2,7 +2,7 @@ import profilePhoto from './assets/profile.png';
 
 export const PROFILE_IMAGE = profilePhoto;
 
-const RESUME_FILE_ID = "1mvJ51EXrz5GJV3m9pNTrtzPmQ8nrGFdB";
+const RESUME_FILE_ID = "1j5j-zhhFJfnxzmiitcTLd-BLARZm93kg";
 
 // Opens Google Drive resume link provided by the user
 export const RESUME_VIEW_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/view?usp=drivesdk`;

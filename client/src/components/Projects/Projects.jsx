@@ -183,10 +183,10 @@ const Projects = () => {
             </div>
           </motion.div>
 
-          {/* ============================================================
-              PROJECT 2: STUDENT MANAGEMENT SYSTEM (CRUD REST API)
+                    {/* ============================================================
+              PROJECT 2: ONLINE FOOD DELIVERY SYSTEM
               ============================================================ */}
-          <motion.div 
+          <motion.div
             className="glass-card project-card secondary-project-card"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -197,13 +197,13 @@ const Projects = () => {
               {/* Project Details */}
               <div className="project-info-side">
                 <div className="project-meta">
-                  <span className="project-type-tag">Backend RESTful API Service</span>
+                  <span className="project-type-tag">Full-Stack Food Delivery Application</span>
                 </div>
 
-                <h3 className="project-heading">Student Management System</h3>
+                <h3 className="project-heading">Online Food Delivery System</h3>
 
                 <p className="project-overview-text">
-                  A comprehensive backend REST API engineered to manage student records, admissions data, and academic queries with structured request validation and robust database persistence.
+                  A full-stack food ordering platform where customers can browse restaurants and menus, add items to a cart, place orders, and track order status. Built with a REST API backend and a responsive user interface.
                 </p>
 
                 {/* Key Features List */}
@@ -212,38 +212,39 @@ const Projects = () => {
                   <ul className="project-features-list">
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Complete CRUD Operations:</strong> Implemented Create, Read, Update, and Delete endpoints for student record lifecycles.</span>
+                      <span><strong>Restaurant & Menu Browsing:</strong> Listing of restaurants and their menu items with categories and search.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>RESTful API Architecture:</strong> Designed clean routing endpoints following standard HTTP methods and status codes.</span>
+                      <span><strong>Cart & Order Placement:</strong> Add, update, and remove cart items and place orders with a total price calculation.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Mongoose Schema & Validation:</strong> Modeled student data constraints, field requirements, and database indexing.</span>
+                      <span><strong>Order Status Tracking:</strong> Customers can follow an order from placed to delivered.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Postman Testing Suite:</strong> Thoroughly tested and verified edge cases, request headers, and payload structures.</span>
+                      <span><strong>User Authentication:</strong> Secure JWT-based login and protected order routes.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Error Handling:</strong> Structured centralized error responses for invalid IDs, missing parameters, and server exceptions.</span>
+                      <span><strong>RESTful API Architecture:</strong> Organized routes and controllers for restaurants, menus, and orders.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Version Control:</strong> Managed code revisions and repository structure with Git and GitHub.</span>
+                      <span><strong>Mongoose Schema Modeling:</strong> Validated MongoDB schemas for users, restaurants, menus, and orders.</span>
                     </li>
                   </ul>
                 </div>
 
                 {/* Tech Badges */}
                 <div className="project-tech-tags">
+                  <span className="tech-pill"><SiReact /> React.js</span>
                   <span className="tech-pill"><SiNodedotjs /> Node.js</span>
                   <span className="tech-pill"><SiExpress /> Express.js</span>
                   <span className="tech-pill"><SiMongodb /> MongoDB</span>
                   <span className="tech-pill">Mongoose</span>
-                  <span className="tech-pill">REST APIs</span>
+                  <span className="tech-pill"><SiJsonwebtokens /> JWT</span>
                   <span className="tech-pill"><SiPostman /> Postman</span>
                   <span className="tech-pill">Git / GitHub</span>
                 </div>
@@ -251,11 +252,11 @@ const Projects = () => {
                 {/* Project Links */}
                 <div className="project-cta-group">
                   <a
-                    href="https://github.com/KummethaHarshavardhan/Task3.git"
+                    href="https://github.com/KummethaHarshavardhan/YOUR_FOOD_DELIVERY_REPO"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-secondary"
-                    id="project-student-system-repo"
+                    id="project-food-delivery-repo"
                   >
                     <FaGithub />
                     <span>View Repository on GitHub</span>
@@ -273,33 +274,33 @@ const Projects = () => {
 
                   <div className="endpoints-list">
                     <div className="endpoint-row">
+                      <span className="http-badge http-get">GET</span>
+                      <span className="endpoint-path">/api/restaurants</span>
+                      <span className="endpoint-desc">List all restaurants</span>
+                    </div>
+
+                    <div className="endpoint-row">
+                      <span className="http-badge http-get">GET</span>
+                      <span className="endpoint-path">/api/restaurants/:id/menu</span>
+                      <span className="endpoint-desc">Fetch a restaurant's menu</span>
+                    </div>
+
+                    <div className="endpoint-row">
                       <span className="http-badge http-post">POST</span>
-                      <span className="endpoint-path">/api/students</span>
-                      <span className="endpoint-desc">Create new student record</span>
+                      <span className="endpoint-path">/api/orders</span>
+                      <span className="endpoint-desc">Place a new order</span>
                     </div>
 
                     <div className="endpoint-row">
                       <span className="http-badge http-get">GET</span>
-                      <span className="endpoint-path">/api/students</span>
-                      <span className="endpoint-desc">Fetch all student records</span>
-                    </div>
-
-                    <div className="endpoint-row">
-                      <span className="http-badge http-get">GET</span>
-                      <span className="endpoint-path">/api/students/:id</span>
-                      <span className="endpoint-desc">Get student by unique ID</span>
+                      <span className="endpoint-path">/api/orders/:id</span>
+                      <span className="endpoint-desc">Get order status</span>
                     </div>
 
                     <div className="endpoint-row">
                       <span className="http-badge http-put">PUT</span>
-                      <span className="endpoint-path">/api/students/:id</span>
-                      <span className="endpoint-desc">Update existing student</span>
-                    </div>
-
-                    <div className="endpoint-row">
-                      <span className="http-badge http-delete">DELETE</span>
-                      <span className="endpoint-path">/api/students/:id</span>
-                      <span className="endpoint-desc">Remove student record</span>
+                      <span className="endpoint-path">/api/orders/:id</span>
+                      <span className="endpoint-desc">Update order status</span>
                     </div>
                   </div>
 

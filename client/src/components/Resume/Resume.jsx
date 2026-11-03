@@ -67,7 +67,7 @@ const Resume = () => {
               <div className="resume-verified-checklist">
                 <div className="checklist-item">
                   <FaCheckCircle className="chk-icon" />
-                  <span>Full-Stack Projects: Smart Expense Tracker & Student Management System</span>
+                  <span>Full-Stack Projects: Smart Expense Tracker & Online Food Delivery System</span>
                 </div>
                 <div className="checklist-item">
                   <FaCheckCircle className="chk-icon" />
