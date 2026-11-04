@@ -13,7 +13,7 @@ import {
   FaDatabase,
   FaCode
 } from 'react-icons/fa';
-import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiAxios, SiJsonwebtokens, SiPostman } from 'react-icons/si';
+import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiAxios, SiJsonwebtokens, SiPostman, SiPython, SiDjango, SiMysql, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
 import './Projects.css';
 
 const Projects = () => {
@@ -183,8 +183,8 @@ const Projects = () => {
             </div>
           </motion.div>
 
-                    {/* ============================================================
-              PROJECT 2: ONLINE FOOD DELIVERY SYSTEM
+               {/* ============================================================
+              PROJECT 2: ONLINE FOOD DELIVERY SYSTEM (DJANGO)
               ============================================================ */}
           <motion.div
             className="glass-card project-card secondary-project-card"
@@ -197,13 +197,13 @@ const Projects = () => {
               {/* Project Details */}
               <div className="project-info-side">
                 <div className="project-meta">
-                  <span className="project-type-tag">Full-Stack Food Delivery Application</span>
+                  <span className="project-type-tag">Full-Stack Django Web Application</span>
                 </div>
 
                 <h3 className="project-heading">Online Food Delivery System</h3>
 
                 <p className="project-overview-text">
-                  A full-stack food ordering platform where customers can browse restaurants and menus, add items to a cart, place orders, and track order status. Built with a REST API backend and a responsive user interface.
+                  A full-stack online food ordering application with separate user and admin functionality. Customers can register, log in, and place orders, while the admin manages orders through the same system.
                 </p>
 
                 {/* Key Features List */}
@@ -212,41 +212,35 @@ const Projects = () => {
                   <ul className="project-features-list">
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Restaurant & Menu Browsing:</strong> Listing of restaurants and their menu items with categories and search.</span>
+                      <span><strong>Full-Stack Ordering Application:</strong> End-to-end food ordering with separate user and admin functionality.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Cart & Order Placement:</strong> Add, update, and remove cart items and place orders with a total price calculation.</span>
+                      <span><strong>User Registration & Login:</strong> Account creation and authentication for customers.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Order Status Tracking:</strong> Customers can follow an order from placed to delivered.</span>
+                      <span><strong>Order Management:</strong> Customers place orders and the admin manages them.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>User Authentication:</strong> Secure JWT-based login and protected order routes.</span>
+                      <span><strong>Relational Database Design:</strong> Designed and managed relational tables in MySQL.</span>
                     </li>
                     <li>
                       <FaCheckCircle className="feat-bullet" />
-                      <span><strong>RESTful API Architecture:</strong> Organized routes and controllers for restaurants, menus, and orders.</span>
-                    </li>
-                    <li>
-                      <FaCheckCircle className="feat-bullet" />
-                      <span><strong>Mongoose Schema Modeling:</strong> Validated MongoDB schemas for users, restaurants, menus, and orders.</span>
+                      <span><strong>Interactive Web Pages:</strong> Built with HTML, CSS, and JavaScript for user interaction.</span>
                     </li>
                   </ul>
                 </div>
 
                 {/* Tech Badges */}
                 <div className="project-tech-tags">
-                  <span className="tech-pill"><SiReact /> React.js</span>
-                  <span className="tech-pill"><SiNodedotjs /> Node.js</span>
-                  <span className="tech-pill"><SiExpress /> Express.js</span>
-                  <span className="tech-pill"><SiMongodb /> MongoDB</span>
-                  <span className="tech-pill">Mongoose</span>
-                  <span className="tech-pill"><SiJsonwebtokens /> JWT</span>
-                  <span className="tech-pill"><SiPostman /> Postman</span>
-                  <span className="tech-pill">Git / GitHub</span>
+                  <span className="tech-pill"><SiPython /> Python</span>
+                  <span className="tech-pill"><SiDjango /> Django</span>
+                  <span className="tech-pill"><SiMysql /> MySQL</span>
+                  <span className="tech-pill"><SiHtml5 /> HTML</span>
+                  <span className="tech-pill"><SiCss3 /> CSS</span>
+                  <span className="tech-pill"><SiJavascript /> JavaScript</span>
                 </div>
 
                 {/* Project Links */}
@@ -264,49 +258,49 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Backend API Endpoints Showcase */}
+              {/* Application Routes Showcase */}
               <div className="project-diagram-side">
                 <div className="api-endpoints-card">
                   <div className="api-card-header">
                     <FaServer />
-                    <span>REST API Endpoints Specification</span>
+                    <span>Application Routes</span>
                   </div>
 
                   <div className="endpoints-list">
                     <div className="endpoint-row">
-                      <span className="http-badge http-get">GET</span>
-                      <span className="endpoint-path">/api/restaurants</span>
-                      <span className="endpoint-desc">List all restaurants</span>
-                    </div>
-
-                    <div className="endpoint-row">
-                      <span className="http-badge http-get">GET</span>
-                      <span className="endpoint-path">/api/restaurants/:id/menu</span>
-                      <span className="endpoint-desc">Fetch a restaurant's menu</span>
+                      <span className="http-badge http-post">POST</span>
+                      <span className="endpoint-path">/register/</span>
+                      <span className="endpoint-desc">Create a user account</span>
                     </div>
 
                     <div className="endpoint-row">
                       <span className="http-badge http-post">POST</span>
-                      <span className="endpoint-path">/api/orders</span>
-                      <span className="endpoint-desc">Place a new order</span>
+                      <span className="endpoint-path">/login/</span>
+                      <span className="endpoint-desc">User login</span>
+                    </div>
+
+                    <div className="endpoint-row">
+                      <span className="http-badge http-post">POST</span>
+                      <span className="endpoint-path">/orders/place/</span>
+                      <span className="endpoint-desc">Place a food order</span>
                     </div>
 
                     <div className="endpoint-row">
                       <span className="http-badge http-get">GET</span>
-                      <span className="endpoint-path">/api/orders/:id</span>
-                      <span className="endpoint-desc">Get order status</span>
+                      <span className="endpoint-path">/orders/</span>
+                      <span className="endpoint-desc">View order list</span>
                     </div>
 
                     <div className="endpoint-row">
                       <span className="http-badge http-put">PUT</span>
-                      <span className="endpoint-path">/api/orders/:id</span>
-                      <span className="endpoint-desc">Update order status</span>
+                      <span className="endpoint-path">/admin/orders/:id/</span>
+                      <span className="endpoint-desc">Admin updates order</span>
                     </div>
                   </div>
 
                   <div className="api-testing-note">
-                    <SiPostman style={{ color: '#ff6c37' }} />
-                    <span>All endpoints verified with Postman collection</span>
+                    <SiMysql style={{ color: '#4479a1' }} />
+                    <span>Data stored in relational MySQL tables</span>
                   </div>
                 </div>
               </div>
