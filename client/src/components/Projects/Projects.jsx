@@ -14,7 +14,20 @@ import {
   FaCode,
   FaCss3Alt
 } from 'react-icons/fa';
-import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiAxios, SiJsonwebtokens, SiPostman, SiPython, SiDjango, SiMysql, SiHtml5, FaCss3Alt, SiJavascript } from 'react-icons/si';
+import {
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiAxios,
+  SiJsonwebtokens,
+  SiPostman,
+  SiPython,
+  SiDjango,
+  SiMysql,
+  SiHtml5,
+  SiJavascript
+} from 'react-icons/si';
 import './Projects.css';
 
 const Projects = () => {
