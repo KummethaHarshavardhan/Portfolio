@@ -253,7 +253,7 @@ const Projects = () => {
                   <span className="tech-pill"><SiDjango /> Django</span>
                   <span className="tech-pill"><SiMysql /> MySQL</span>
                   <span className="tech-pill"><SiHtml5 /> HTML</span>
-                  <span className="tech-pill"><SiCss3 /> CSS</span>
+                  <span className="tech-pill"><FaCss3Alt /> CSS</span>
                   <span className="tech-pill"><SiJavascript /> JavaScript</span>
                 </div>
 
