@@ -258,7 +258,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Application Routes Showcase */}
+        
               <div className="project-diagram-side">
                 <div className="api-endpoints-card">
                   <div className="api-card-header">
